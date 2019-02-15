@@ -8,7 +8,7 @@ body {
 .row-1{
 	height: 20%;
 	width: 100%; 
-	background-color:red;
+	background-color:navy;
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -27,7 +27,7 @@ body {
 	width: 20%;
 	margin: ;
 	display: block;
-	background-color:navy;
+	background-color:black;
 }
 
 .box2{
@@ -35,5 +35,27 @@ body {
 	width: 100%;
 	margin: 10;
 	display: block;
-	background-color:green;
+	background-color:black;
+}
+
+.box3{
+	height: 98%;
+	width: 100%;
+	margin: 10;
+	display: block;
+	background-color:black;
+}
+
+.titlebox{
+	height: 25%;
+	width: 10%;
+	margin: 10;
+	display: flex;
+	background-color:black;
+}
+
+h1 {
+	color:red;
+    text-align: left;
+	font-size: 50
 }
