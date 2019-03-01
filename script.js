@@ -1,19 +1,82 @@
-// if you want to change something on a DIFFERENT element, you have to call it by name (it's "id")
-// https://www.w3schools.com/jsref/met_document_getelementbyid.asp
-// "el" stands for the "element" that was just clicked
-function allOpaque(el){
-	document.getElementById("money").classList.add("opaque");
-	document.getElementById("monopoly").classList.add("opaque"); 
+//3d div
+function nextImage(el){
+	if (el.src.match("Images/telo.jpg")){
+		
+		el.src = "Images/3d.jpg";
+		
+	} else if (el.src.match("Images/3d.jpg")){
+		
+		el.src = "Images/telo.jpg";
+			
+	} else {
+		}
+}
+//Telescope div
+function nextImage2(el){
+	if (el.src.match("Images/3d.jpg")){
+		
+		el.src = "Images/telo.jpg";
+		
+	} else if (el.src.match("Images/telo.jpg")){
+		
+		el.src = "Images/orbital.jpeg";
+		
+	} else if (el.src.match("Images/orbital.jpeg")){
+		
+		el.src = "Images/oxygen.jpg";
+		
+	} else if (el.src.match("Images/oxygen.jpeg")){
+		
+		el.src = "Images/3d.jpg";
+	
+	} else {
+		}
 }
 
-// "el" stands for the "element" that was just clicked
-function removeColor(el){
-	document.getElementById("").classList.remove("");
-	document.getElementById("").classList.remove("");
+//Orbital div
+function nextImage3(el){
+	if (el.src.match("Images/3d.jpg")){
+		
+		el.src = "Images/telo.jpg";
+		
+	} else if (el.src.match("Images/telo.jpg")){
+		
+		el.src = "Images/orbital.jpeg";
+		
+	} else if (el.src.match("Images/orbital.jpeg")){
+		
+		el.src = "Images/oxygen.jpg";
+		
+	} else if (el.src.match("Images/oxygen.jpeg")){
+		
+		el.src = "Images/3d.jpg";
+	
+	} else {
+		}
 }
 
-function showTrophy(el){
-	document.getElementById("monopoly").src = "images/money.png";
-	document.getElementById("money").src = "images/monopoly.jpg";
-	document.getElementById("monopoly").src = "images/money.png";
+//Oxygen div
+function nextImage4(el){
+	if (el.src.match("Images/3d.jpg")){
+		
+		el.src = "Images/telo.jpg";
+		
+	} else if (el.src.match("Images/telo.jpg")){
+		
+		el.src = "Images/orbital.jpeg";
+		
+	} else if (el.src.match("Images/orbital.jpeg")){
+		
+		el.src = "Images/oxygen.jpg";
+		
+	} else if (el.src.match("Images/oxygen.jpeg")){
+		
+		el.src = "Images/3d.jpg";
+	
+	} else {
+		}
 }
+
+function playSound() {
+	// when the JACKPOT! button is clicked, play the slot machine sound
+}	
