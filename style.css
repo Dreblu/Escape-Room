@@ -47,6 +47,14 @@ body {
 	background-color:black;
 }
 
+.box4{
+	height: 80%;
+	width: 15%;
+	margin: 5;
+	display: block;
+	background-color:navy;
+}
+
 .titlebox{
 	height: 2%;
 	width: 20%;
