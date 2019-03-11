@@ -94,15 +94,3 @@ function playsound2(e){
 	document.getElementById("stamin").pause();
 	document.getElementById("double").pause();
 }
-
-function checkConfiguration(el){
-	if(a.src.match(Images/3d.jpg") && b.src.match(") && c.src.match("") && d.src.match("Images/orbital.jpeg")){
-		a.classList.add("opaque");
-		b.classList.add("opaque");
-		c.classList.add("opaque");
-		d.classList.add("opaque");
-		el.src = "image/money.png";
-		console.log("YOU WIN!");
-	} else {
-		
-	}
