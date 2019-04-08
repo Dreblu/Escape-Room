@@ -1,4 +1,9 @@
 //3d div
+a = document.getElementById("telo");
+b = document.getElementById("3d");
+c = document.getElementById("oxygen");
+d = document.getElementById("orbital");
+
 function nextImage(el){
 	if (el.src.match("Images/telo.jpg")){
 		
@@ -81,16 +86,37 @@ function nextImage4(el){
 		}
 }
 
+function link(){
+	document.location.href = "https://martirjimmy.github.io/Phase9/"
+}
+
+function checkConfiguration(el){
+			if(a.src.match("Images/3d.jpg") && b.src.match("Images/telo.jpg") && c.src.match("Images/orbital.jpeg") && d.src.match("Images/oxygen.jpg")){
+			playsound3();
+			a.classList.add("opaque");
+			b.classList.add("opaque");
+			c.classList.add("opaque");
+			d.classList.add("opaque");
+			setTimeout(link, 10000); 
+		} else {
+			//Do nothing
+		}
+}
+
 function playsound1(e){
 	document.getElementById("jug").play();
 	document.getElementById("speed").pause();
-	document.getElementById("stamin").pause();
-	document.getElementById("double").pause();
+	document.getElementById("launch").pause();
 }
 
 function playsound2(e){
 	document.getElementById("speed").play();
 	document.getElementById("jug").pause();
-	document.getElementById("stamin").pause();
-	document.getElementById("double").pause();
+	document.getElementById("launch").pause();
+}
+
+function playsound3(e){
+	document.getElementById("launch").play();
+	document.getElementById("jug").pause();
+	document.getElementById("speed").pause();
 }
